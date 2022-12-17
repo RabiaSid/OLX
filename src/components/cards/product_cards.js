@@ -2,10 +2,86 @@ import { HeartOutlined } from '@ant-design/icons';
 import React from 'react'
 import { Post1, Post2 } from '../../assets/index'
 import baseColors from '../../constants/colors';
+import { Card } from "react-bootstrap";
 
 
  
 function Product_cards() {
+ 
+  const cardInfo = [
+    {
+      
+      title: "Lebron",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 1,
+    },
+    {
+      
+      title: " James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 2,
+    },
+    {
+      
+      title: "Lebron",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 3,
+    },
+    {
+      
+      title: "James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 4,
+    },
+    {
+      
+      title: "James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 4,
+    },
+    {
+      
+      title: "James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 4,
+    },
+    {
+      
+      title: "James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 4,
+    },
+    {
+      
+      title: "James",
+      amount: "2.00$",
+      more: 'nkjhjk',
+      area: "NK",
+      text: "THE GOAT",
+      key: 4,
+    },
+  ]
 
   const style = {
     card: {
@@ -14,22 +90,6 @@ function Product_cards() {
         height: '420px',
         minHeight: 'auto',
         margin: '',
-
-
-        
-        /*height: height && height,
-        minHeight: "auto",
-        width: width && width,
-        minWidth: !width && '170px',
-        color,
-        fontWeight: fontWeight && fontWeight,
-        borderRadius: borderRadius ? borderRadius : "5px",
-        border: 'none',
-        background: `${backgroundColor}`,
-        padding: '0px 5px',
-        textAlign: 'center',
-        fontSize: '20px',
-        cursor: 'pointer',*/
     },
 
     image_back: {
@@ -55,36 +115,34 @@ function Product_cards() {
 
 return (
     
-<div className="py-1 rounded m-0 p-0 d-flex justify-content-center align-items-center">
-<div className="card" style={style.card}>
+<div className="d-flex justify-content-center align-items-center container">
+<div className=' row'>
+  
+  {
+    
+cardInfo.map((item) => (
+<div className=' col-sm-6 col-lg-4 col-xl-3 ' key={item.key}>
+<div className="card" style={style.card}  >
   <div className='text-center' style={style.image_back}>
-  <img  style={style.image} src={ Post1 } class="card-img-top" alt="..."/>
+  <img  style={style.image} src={Post1} class="card-img-top" alt="..."/>
   </div>
   <div className="card-body p-0 m-0 row" >
-    <h6 className="card-title col-9 " style={style.card_body}>Suzuki Cultus VXRi 2008 </h6>
+    <h6 className="card-title col-9 " style={style.card_body}>{item.title}</h6>
     <a className='col-3 fs-4'><HeartOutlined style={style.card_body}/></a>
-    <h5 className="card-text col-12 " style={style.card_body}>Rs 735,000</h5>
-    <p className="card-text col-12 m-0">99,000Km * 2008</p>
-    <p className="card-text col-12">abul hassan isphani Road, karachi</p>
+    <h5 className="card-text col-12 " style={style.card_body}>{item.amount}</h5>
+    <p className="card-text col-12 m-0">{item.more}</p>
+    <p className="card-text col-12">{item.area}</p>
   </div>
+</div>
+</div>
+))
+
+}
 </div>
 </ div>
 
-      
-      /*
-      <div>
-      <Card
-            hoverable
-            style={styles.card}
-            cover={
-              <img  width='80%' height='80%' src={ Post1 }/>
-            }
-          >
-            <Meta title="Europe Street beat" description="www.instagram.com" />
-          </Card> </div>
-          */
+  );
 
-  )
+
 }
-
 export default Product_cards

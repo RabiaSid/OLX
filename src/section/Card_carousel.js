@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
   
 import { dataDigitalBestSeller } from '../components/Item/data'
 import imgGirl from '../assets/watch.jpg';
-import Product_cards from '../components/cards/product_cards';
 import baseColors from '../constants/colors';
+import Popular_Card from '../components/cards/popular_Card';
 
 const Style =  {
     background: baseColors.lightGrey,
@@ -64,7 +64,7 @@ function Card_carousel() {
       <div className="App_slider container p-2 " style={Style}>
         <Slider {...settings}>
           {dataDigitalBestSeller.map((item) => (
-            <Product_cards />
+            <Popular_Card />
           ))}
         </Slider>
       </div>

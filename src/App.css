@@ -19,23 +19,19 @@ h1 h2 h3 h4 h5 h6 a span p{
 	line-height: 1.0;
 }
 .container-fluid{
-	width: 100%;
-	margin-right : 0px !important;
-    margin-left : 0px !important;
-    padding-right : 0px !important;
-	padding-left : 0px !important;
+	margin: auto;
+	padding: 0;
+
 }
 .container {
-	margin-right : 0px !important;
-	margin-left : 0px !important;
-	width: 100%;
-	justify-content: center;
+	margin: auto;
+	padding: 0;
   }
 .navbar{
 	margin: 0%;
   }
 .topBar{
-	height: 11vh;
+	height: 100%;
 	width: 100%;
 	display: inline-block;
 	font-size: 18px;
@@ -48,18 +44,14 @@ h1 h2 h3 h4 h5 h6 a span p{
 	vertical-align: 0;
 }
 .header{
-	height: 15vh;
+	height: auto;
 	width: 100%;
-	display: inline-block;
-	font-size: 2rem;
-	font-weight: bold;
-
+	
 }
 .header_menu{
-	height: 80px;
+	height: 12vh;
 	width: 100%;
 	display: inline-block;
-	padding: 1.2rem;
 	font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: normal;
@@ -67,7 +59,7 @@ h1 h2 h3 h4 h5 h6 a span p{
 
 .img-icon-fluid {
     max-width: 70px;
-	min-width: 60px;
+	min-width: 50px;
     height: 60px;
 	margin-right: auto;
 }
@@ -185,11 +177,43 @@ h1 h2 h3 h4 h5 h6 a span p{
 	height: 2px;
   }
  
+.footer2 ul{
+	text-decoration: none;
+	list-style-type:none ;
+	padding-left: 0rem;
 
-@media only screen and (min-width: 1350px) {
-	.col-xl-3 {
-		flex: 0 0 auto;
-		width: 25%;
+}
+
+.footer li{
+	text-decoration: none;
+	list-style-type:none ;
+
+}
+
+.verticalLine{
+	height: 300px;
+    border-right: 1px solid #000900;
+	position: absolute;
+	right: 50%;
+}
+
+
+
+@media screen and (max-width:1270px) {
+    .Button_top {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width:500px){
+	body{
+		width: 100%;
 	}
 }
 
+@media screen and (max-width:556px) {
+    .header_menu {
+        display: none !important;
+    }
+}
