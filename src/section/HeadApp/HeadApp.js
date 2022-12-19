@@ -52,9 +52,9 @@ const AppHeader = () => {
 
 <nav className="navbar navbar-expand row " style={style.NavBar}>
     
-    <a className="nav-item col-1  d-none d-md-block text-center" onClick={() => navigate('/')}><img className='img-icon-fluid'  src='logo.svg'/></a>
+    <a className="nav-item col-md-1  d-none d-md-block text-center" onClick={() => navigate('/')}><img className='img-icon-fluid'  src='logo.svg'/></a>
 
-    <div className='col-12 col-md-8 '>
+    <div className='col-12 col-md-8 col-lg-8'>
     <div className='row'>
 
     <form className=" nav-item form col-12 col-md-6 p-1">
@@ -74,12 +74,12 @@ const AppHeader = () => {
 
     </div></div>
       
-      <ul className="nav-item  col-1 text-center d-none d-lg-block ">
+      <ul className="nav-item  col-md-3 col-lg-1 text-center d-none d-lg-block ">
         <li className="nav-item d-flex justify-content-center d-none d-md-block ">
         <a className='hvr_btn'><Popup_button /></a>
         </li></ul>
         
-        <div className="nav-item  col-2  row Button_top " >
+        <div className="nav-item  col-lg-3  row Button_top " >
         <div class="nav-item  px-1 pb-5 col-12">
         <a class="nav-link active Button_top " aria-current="page" href="#">
         <img  className='Button_top1 ' src={ Button_top } width="200px" height="80px"/>
