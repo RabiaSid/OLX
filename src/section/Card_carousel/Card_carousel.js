@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
   
-import { dataDigitalBestSeller } from '../components/Item/data'
-import imgGirl from '../assets/watch.jpg';
-import baseColors from '../constants/colors';
-import Popular_Card from '../components/cards/popular_Card';
+import { dataDigitalBestSeller } from '../../components/Item/data'
+import imgGirl from '../../assets/watch.jpg';
+import baseColors from '../../constants/colors';
+import Popular_Card from '../../components/cards/popular_Card';
+
 
 const Style =  {
     background: baseColors.lightGrey,

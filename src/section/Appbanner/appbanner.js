@@ -1,8 +1,8 @@
 import MenuDivider from 'antd/es/menu/MenuDivider'
 import React from 'react'
-import { Google_icon1, Google_icon2, Google_icon3 } from '../../../assets'
-import '../../../App.css'
-import baseColors from '../../../constants/colors';
+import { Google_icon1, Google_icon2, Google_icon3 } from '../../assets'
+import '../../App.css'
+import baseColors from '../../constants/colors';
 
 
 

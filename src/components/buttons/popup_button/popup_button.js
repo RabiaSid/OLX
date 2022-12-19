@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import baseColors from '../../constants/colors';
+import baseColors from '../../../constants/colors';
 import {  FacebookFilled, GoogleCircleFilled  , MailFilled, PhoneFilled  } from '@ant-design/icons';
 
 const Style = {

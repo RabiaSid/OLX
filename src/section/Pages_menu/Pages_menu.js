@@ -1,6 +1,4 @@
-import { CarOutlined, 
-  HomeOutlined, 
-  PlusOutlined, 
+import {  
   MobileTwoTone, 
   PoweroffOutlined, 
   CustomerServiceTwoTone,
@@ -13,11 +11,8 @@ import { CarOutlined,
 
 import { NavLink } from 'react-router-dom';
 import { DownOutlined } from '@ant-design/icons';
-import { AutoComplete, Dropdown, message, Space } from 'antd';
-import baseColors from '../constants/colors';
-import { Button_top } from '../assets';
-import Popup_button from '../components/popup_button/popup_button';
-import { useNavigate } from 'react-router'
+import {  Dropdown, message, Space } from 'antd';
+import baseColors from '../../constants/colors';
 
 
 const style = {
@@ -66,7 +61,7 @@ const style = {
 function App_menu() {
   return (
     <div>
-        <nav className="navbar navbar-expand  navbar-dark font d-flex justify-content-start align-items-center container-fluid  row header_menu " >
+        <nav className="navbar navbar-expand  navbar-dark font d-flex justify-content-start align-items-center container-fluid  row header_menu fs-5" >
     <div className="collapse navbar-collapse " id="collapsibleNavbar">
       <ul className="navbar-nav d-flex justify-content-center p-1 m-0">
         <li className='py-2 d-none d-lg-block'>

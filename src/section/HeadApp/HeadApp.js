@@ -1,22 +1,14 @@
 import { CarOutlined, 
       HomeOutlined, 
-      PlusOutlined, 
-      MobileTwoTone, 
-      PoweroffOutlined, 
-      CustomerServiceTwoTone,
-      ShopTwoTone,
-      HomeTwoTone,
-      CarTwoTone
+      PlusOutlined,
+      SearchOutlined
 
      }
       from '@ant-design/icons';
 
-import { NavLink } from 'react-router-dom';
-import { DownOutlined } from '@ant-design/icons';
-import { AutoComplete, Dropdown, message, Space } from 'antd';
-import baseColors from '../constants/colors';
-import { Button_top } from '../assets';
-import Popup_button from '../components/popup_button/popup_button';
+import baseColors from '../../constants/colors';
+import { Button_top } from '../../assets';
+import Popup_button from '../../components/buttons/popup_button/popup_button';
 import { useNavigate } from 'react-router'
 
 
@@ -25,6 +17,8 @@ const style = {
   NavBar: {
     background: baseColors.primaryColor,
   },
+ 
+  
 }
 
 const AppHeader = () => {
@@ -42,10 +36,10 @@ const AppHeader = () => {
     <a className="nav-link py-0" onClick={() => navigate('/')}><img  width='50px' height='50px' src='logo.svg'/></a>
     </li>
     <li className="nav-item hvr_blue">
-      <a className="nav-link" onClick={() => navigate('/cars')}> <CarOutlined /> MOTORS</a>
+      <button className="nav-link icon-btn" onClick={() => navigate('/cars')}> <CarOutlined /> MOTORS</button>
     </li>
     <li className="nav-item hvr_blue">
-      <a className="nav-link" onClick={() => navigate('/property')}> <HomeOutlined /> PROPERTY</a>
+      <button className="nav-link icon-btn" onClick={() => navigate('/property')}> <HomeOutlined /> PROPERTY</button>
     </li>
   </ul>
 </div></nav>
@@ -64,7 +58,7 @@ const AppHeader = () => {
     <div className='row'>
 
     <form className=" nav-item form col-12 col-md-6 p-1">
-      <select className="form-select form-select fill"   aria-label="Default select example">
+      <select className="form-select form-select fill fs-6 "   aria-label="Default select example">
           <option selected>  Pakistan </option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -74,7 +68,7 @@ const AppHeader = () => {
     <form className=" nav-item form  col-12  col-md-6 p-1">    
       <div className="input-group input-group ">
           <input type="text" className="form-control fill" placeholder="Search"/>
-          <button type="button" className="btn fill">Search</button>
+          <button type="button" className="btn fill search_btn fs-6 "><SearchOutlined /></button>
       </div>
     </form>
 
@@ -82,7 +76,7 @@ const AppHeader = () => {
       
       <ul className="nav-item  col-1 text-center d-none d-lg-block ">
         <li className="nav-item d-flex justify-content-center d-none d-md-block ">
-        <Popup_button />
+        <a className='hvr_btn'><Popup_button /></a>
         </li></ul>
         
         <div className="nav-item  col-2  row Button_top " >

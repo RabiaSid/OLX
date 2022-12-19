@@ -1,7 +1,8 @@
 import React from 'react'
 import { BackTop } from 'antd';
-import baseColors from '../../constants/colors';
-import '../../../src/App.css'
+import baseColors from '../../../constants/colors';
+import '../../../../src/App.css'
+import { UpOutlined  } from '@ant-design/icons';
 
 
 const style = {
@@ -20,7 +21,7 @@ function BackToTopButton() {
     <>
     <div>
     <BackTop style={style.btn}>
-      <div className="ant-back-top-inner text-center  fs-6 " >Back To Top</div>
+      <div className="ant-back-top-inner text-center  fs-6 py-1" > <UpOutlined /> Back To Top</div>
     </BackTop>
   </div>
   </>

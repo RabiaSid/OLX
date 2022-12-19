@@ -8,11 +8,11 @@ import {
   Route 
 }from "react-router-dom"
 
-import AppHeader from './section/HeadApp'
+import AppHeader from './section/HeadApp/HeadApp'
 
 
 import AppHome from './pages/common/home/home';
-import FooterApp from './section/FooterApp';
+import FooterApp from './section/FooterApp/FooterApp';
 import AppAbout from './pages/common/about/about';
 import AppFollow_us from './pages/common/Follow_us/follow_us';
 import AppAllcategories from './pages/common/Allcategories/index';
@@ -22,8 +22,8 @@ import Property from './pages/common/Allcategories/property/property';
 import Mobile from './pages/common/Allcategories/mobile/mobile';
 import Services from './pages/common/Allcategories/services/services';
 import Cars from './pages/common/Allcategories/cars/cars';
-import App_menu from './section/Pages_menu';
-import BackToTopButton from './components/buttons/BackToTopButton';
+import App_menu from './section/Pages_menu/Pages_menu';
+import BackToTopButton from './components/buttons/BackToTopButton/BackToTopButton';
 
 
 
