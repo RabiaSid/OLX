@@ -32,10 +32,14 @@ const style={
         color: baseColors.white,
         fontSize: '0.8rem',
     },
+    a:{
+        textDecoration : 'none'
+    },
     icon:{
         fontSize: '1rem',
         color: baseColors.primaryTextColor,
         padding: '2px',
+        
     }
 
 }
@@ -87,10 +91,10 @@ function FooterApp() {
         <h3 style={style.heading}>Follow US</h3>
         </div>
         <div className='col-12 '>
-        <span  style={style.icon} ><a href="https://www.facebook.com/"> <FacebookFilled /> </a></span>
-        <span  style={style.icon} ><a href="https://www.google.com/" > <GoogleCircleFilled /> </a></span>
-        <span  style={style.icon} ><a href="https://mail.google.com/" > <MailFilled /></a> </span>
-        <span  style={style.icon} ><a href='' onClick={() => navigate('/follow')}><PhoneFilled /> </a> </span>
+        <span><a href="https://www.facebook.com/" style={style.a}> <FacebookFilled style={style.icon}/> </a></span>
+        <span><a href="https://www.google.com/" style={style.a}> <GoogleCircleFilled style={style.icon}/> </a></span>
+        <span><a href="https://mail.google.com/" style={style.a}> <MailFilled style={style.icon}/></a> </span>
+        <span><a href='' onClick={() => navigate('/follow')} style={style.a}><PhoneFilled style={style.icon}/> </a> </span>
         </div>
         <div className='col-12 col-sm-4'>
         <img src={Google_icon1} />

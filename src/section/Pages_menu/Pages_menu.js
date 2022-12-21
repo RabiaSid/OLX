@@ -1,10 +1,10 @@
 import {  
-  MobileTwoTone, 
+  MobileOutlined, 
   PoweroffOutlined, 
-  CustomerServiceTwoTone,
-  ShopTwoTone,
-  HomeTwoTone,
-  CarTwoTone
+  CustomerServiceOutlined,
+  ShopOutlined,
+  HomeOutlined,
+  CarOutlined
 
  }
   from '@ant-design/icons';
@@ -26,14 +26,20 @@ const style = {
     textAlign: 'center'
     
   },
+  Dropdawn_Style_Items: {
+    color: baseColors.secondaryColor,
+    fontSize:'3rem',
+    textAlign: 'center'
+    
+  },
     icon_style:{
-      color: baseColors.lightBlue,
+      color: baseColors.white,
       fontSize:'1.2rem',
-      background: baseColors.lightGrey,
-      padding:'5px',
+      background: baseColors.secondaryColor,
+      padding:'10px',
       textAlign:'center',
-      width:'40px',
-      height:'40px',
+      width:'50px',
+      height:'50px',
       Border: '1px solid',
       borderRadius: "50%"
     }
@@ -56,6 +62,18 @@ const style = {
       label: '3rd menu item',
       key: '3',
     },
+    {
+      label: '4st menu item',
+      key: '4',
+    },
+    {
+      label: '5nd menu item',
+      key: '5',
+    },
+    {
+      label: '6rd menu item',
+      key: '6',
+    },
   ];
 
 function App_menu() {
@@ -65,26 +83,28 @@ function App_menu() {
     <div className="collapse navbar-collapse " id="collapsibleNavbar">
       <ul className="navbar-nav d-flex justify-content-center p-1 m-0">
         <li className='py-2 d-none d-lg-block'>
+        <NavLink to='/all-categories'>
       <Dropdown
     menu={{
       items,
       onClick,
       
     }}
-  >
+    style={style.Dropdawn_Style_Items}
+   >
     <a onClick={(e) => e.preventDefault()}>
       <Space style={style.Dropdawn_Style}>
          All Categories
-        <DownOutlined style={style.Dropdawn_Style}/>
+        <DownOutlined />
       </Space>
     </a>
-  </Dropdown></li>
+  </Dropdown></NavLink></li>
 
         <li className="nav-item ">
           <NavLink to='/mobile'>
           <a className="nav-link text-dark d-block d-lg-none row">
-          <button className=" d-flex justify-content-center align-item-center btn" type="button">
-          <MobileTwoTone style={style.icon_style}/>
+          <button className=" d-flex justify-content-center align-item-center btn" type="button" >
+          <MobileOutlined style={style.icon_style}/>
           </button>
           </a>
           {/*<a className='nav-link text-dark d-block d-lg-none justify-content-center align-items-center '><HomeFilled style={style.icon_style}/></a>*/}
@@ -107,7 +127,7 @@ function App_menu() {
           <NavLink to='/services'>
           <a className="nav-link text-dark d-block d-lg-none row">
           <button className=" d-flex justify-content-center align-item-center btn " type="button">
-          <CustomerServiceTwoTone style={style.icon_style}/>
+          <CustomerServiceOutlined style={style.icon_style}/>
           </button>
           </a>
           <a className="nav-link text-dark d-none d-lg-block" >Services</a>
@@ -118,7 +138,7 @@ function App_menu() {
           <NavLink to='/furnitue'>
           <a className="nav-link text-dark d-block d-lg-none row">
           <button className=" d-flex justify-content-center align-item-center btn" type="button">
-          <ShopTwoTone  style={style.icon_style}/>
+          <ShopOutlined  style={style.icon_style}/>
           </button>
           </a>
           <a className="nav-link text-dark d-none d-lg-block" >Furniture</a>
@@ -129,7 +149,7 @@ function App_menu() {
           <NavLink to='/property'>
           <a className="nav-link text-dark d-block d-lg-none row">
           <button className=" d-flex justify-content-center align-item-center btn" type="button">
-          <HomeTwoTone style={style.icon_style}/>
+          <HomeOutlined style={style.icon_style}/>
           </button>
           </a>
           <a className="nav-link text-dark d-none d-lg-block" >Property</a>
@@ -139,7 +159,7 @@ function App_menu() {
           <NavLink to='/cars'>
           <a className="nav-link text-dark d-block d-lg-none row">
           <button className=" d-flex justify-content-center align-item-center btn" type="button">
-          <CarTwoTone style={style.icon_style}/>
+          <CarOutlined style={style.icon_style}/>
           </button>
           </a>
           <a className="nav-link text-dark d-none d-lg-block" >car</a>

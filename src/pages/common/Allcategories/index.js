@@ -1,6 +1,10 @@
+import AppProduct from "../../../section/product/product"
+
 function AppAllcategories() {
   return ( 
-    <div>App</div> 
+    <div>
+      <AppProduct />
+    </div> 
   )
 }
 

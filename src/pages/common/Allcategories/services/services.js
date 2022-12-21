@@ -103,8 +103,8 @@ card_body: {
 
 function Services() {
   return (
-    <div className="d-flex justify-content-center align-items-center container">
-    <div className=' row '>
+    <div className="d-flex justify-content-center align-items-center container m-auto p-auto">
+    <div className=' row m-auto p-auto '>
     <h1>Services</h1>
   
   {

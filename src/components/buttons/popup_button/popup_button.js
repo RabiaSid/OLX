@@ -22,7 +22,7 @@ const Style = {
     },
     box:{
         color: baseColors.secondaryColor,
-        fontSize:'1.4rem',
+        fontSize:'1.2rem',
         border: '3px solid ',
         borderColor: baseColors.secondaryColor,
         margin: '10px',
@@ -56,16 +56,16 @@ function Popup_button() {
                 <p>The trusted community of buyers and sellers.</p>
             </div>
             <div style={Style.box} className="row">
-            <a ><FacebookFilled /> hellow</a>
+            <a ><FacebookFilled /> FaceBook </a>
             </div>
             <div style={Style.box} className="row">
-            <a ><GoogleCircleFilled />  hellow</a>
+            <a ><GoogleCircleFilled />  Google </a>
             </div>
             <div style={Style.box} className="row">
-            <a ><MailFilled /> hellow</a>
+            <a ><MailFilled /> Email </a>
             </div>
             <div style={Style.box} className="row">
-            <a ><PhoneFilled />   hellow</a>
+            <a ><PhoneFilled /> Contact </a>
             </div>
           {/*<Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
