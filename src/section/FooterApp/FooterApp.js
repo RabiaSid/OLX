@@ -50,7 +50,7 @@ function FooterApp() {
 
 
   return (
-    <>
+    <div>
     
     <footer className=" row m-0 p-0"  >
     <div className="col-12 " style={style.footer}>
@@ -114,7 +114,7 @@ function FooterApp() {
             </div>
     </footer>
     
-    </>
+    </div>
   )
 }
 

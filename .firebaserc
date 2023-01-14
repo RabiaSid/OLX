@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "olxproject-88920"
-  }
+    "default": "olx-project-2e4d6",
+    "yes": "olx-project-2e4d6"
+  },
+  "targets": {},
+  "etags": {}
 }

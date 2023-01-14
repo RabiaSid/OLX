@@ -27,6 +27,7 @@ const AppHeader = () => {
 
   return (
     <>
+    <div>
     <div style={{background:baseColors.primaryColor}} >
     <nav className="navbar navbar-expand  container-fluid topBar row " style={style.NavBar}>
 
@@ -52,7 +53,7 @@ const AppHeader = () => {
 
 <nav className="navbar navbar-expand row " style={style.NavBar}>
     
-    <a className="nav-item col-md-2  d-none d-md-block text-center" onClick={() => navigate('/')}><img className='img-icon-fluid'  src='logo.svg'/></a>
+    <span className="nav-item col-md-2  d-none d-md-block text-center" onClick={() => navigate('/')}><img className='img-icon-fluid'  src='logo.svg'/></span>
 
     <div className='col-12 col-md-8 col-lg-6'>
     <div className='row'>
@@ -80,8 +81,8 @@ const AppHeader = () => {
         </li></ul>
         
         <div className="nav-item  col-lg-3  row Button_top d-none d-lg-block" >
-        <div class="nav-item  px-1 pb-5 col-12">
-        <a class="nav-link active Button_top " aria-current="page" href="#">
+        <div className="nav-item  px-1 pb-5 col-12">
+        <a className="nav-link active Button_top " aria-current="page" href="#">
         <img  className='Button_top1 ' src={ Button_top } width="200px" height="80px"/>
         <pre className='Button_top2 ' ><PlusOutlined/>SELL</pre> 
         </a>
@@ -96,6 +97,7 @@ const AppHeader = () => {
 </div>
 
 
+</div>
 </>
   )
 }

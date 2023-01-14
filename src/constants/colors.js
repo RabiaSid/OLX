@@ -7,7 +7,8 @@ const baseColors = {
     lightGrey: "#EBEEEF",
     primaryTextColor: " #808080",
     secondaryTextColor:"#002f34",
-    lightBlue: "#0d95c6"
+    lightBlue: "#0d95c6",
+    blackColor: "#000000"
 }
 
 export default baseColors

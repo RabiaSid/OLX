@@ -18,7 +18,7 @@ function TopSlider() {
       
     </div>
     <div>
-    <img src='https://images.olx.com.pk/thumbnails/309851602-800x600.webp' style={contentStyle}/>
+    <img src='https://images.olx.com.pk/thumbnails/316217943-800x600.webp' style={contentStyle}/>
     </div>
   </Carousel>
 

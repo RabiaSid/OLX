@@ -9,15 +9,16 @@ import {
  }
   from '@ant-design/icons';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link, Outlet } from 'react-router-dom';
 import { DownOutlined } from '@ant-design/icons';
 import {  Dropdown, message, Space } from 'antd';
 import baseColors from '../../constants/colors';
+import React from 'react';
 
 
 const style = {
 
-    NavBar: {
+    Navbar: {
       background: baseColors.white,
     },
    Dropdawn_Style: {
@@ -77,8 +78,9 @@ const style = {
   ];
 
 function App_menu() {
+  
   return (
-    <div>
+    <React.Fragment>
         <nav className="navbar navbar-expand  navbar-dark font d-flex justify-content-start align-items-center container-fluid  row header_menu fs-5" >
     <div className="collapse navbar-collapse " id="collapsibleNavbar">
       <ul className="navbar-nav d-flex justify-content-center p-1 m-0">
@@ -156,19 +158,25 @@ function App_menu() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to='/cars'>
+          <Link to='/cars' >
           <a className="nav-link text-dark d-block d-lg-none row">
           <button className=" d-flex justify-content-center align-item-center btn" type="button">
           <CarOutlined style={style.icon_style}/>
           </button>
           </a>
           <a className="nav-link text-dark d-none d-lg-block" >car</a>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <NavLink to='/about'>
+          <a className="nav-link text-dark d-none d-xl-block" >About</a>
           </NavLink>
         </li>
       </ul>
     </div>
    </nav>
-    </div>
+   <Outlet />
+    </React.Fragment>
   )
 }
 

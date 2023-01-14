@@ -1,7 +1,7 @@
 
 function AppAbout() {
   return (
-    <div className="container font">
+    <div className="container font py-5 my-3">
       <h1>About us!</h1>
       <p className="separator">Here we can see contact details and what's new in #NayaOLX and our premium support</p>
       <div className="row">
