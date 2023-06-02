@@ -103,6 +103,20 @@ h1 h2 h3 h4 h5 h6 a span p{
 	background-color:#002f34 ;
 }
 .Button_top{
+	background-image: url('./assets/button.svg');
+	background-repeat: no-repeat;
+	background-size: auto;
+	
+}
+.Button_top1{
+	font-size: 22px;
+	font-weight: bold;
+	/* text-align: center; */
+	
+	
+}
+
+/* .Button_top{
 	position: relative;
 	z-index: 0 ;
 	width: auto;
@@ -110,8 +124,7 @@ h1 h2 h3 h4 h5 h6 a span p{
 .Button_top1{
 	position: absolute;
 	z-index: 1 ;
-	font-size: 25px;
-	font-weight: bold;
+	
 	
 }
 .Button_top2{
@@ -119,9 +132,9 @@ h1 h2 h3 h4 h5 h6 a span p{
 	z-index: 1 ;
 	padding: 5px 50px 5px 50px;
 	margin: 0;
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: bold;
-}
+} */
 .App_slider{
 	width: 90%;
   margin-top: 50px;

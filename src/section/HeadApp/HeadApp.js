@@ -80,13 +80,10 @@ const AppHeader = () => {
         <a className='hvr_btn'><Popup_button /></a>
         </li></ul>
         
-        <div className="nav-item  col-lg-3  row Button_top d-none d-lg-block" >
-        <div className="nav-item  px-1 pb-5 col-12">
-        <a className="nav-link active Button_top " aria-current="page" href="#">
-        <img  className='Button_top1 ' src={ Button_top } width="200px" height="80px"/>
-        <pre className='Button_top2 ' ><PlusOutlined/>SELL</pre> 
+        <div className="nav-item  col-lg-1  d-none d-lg-block " >
+        <a className="nav-link active Button_top row " aria-current="page" href="#">
+        <pre className='Button_top1 ' ><PlusOutlined style={{fontSize:'20px'}}/>SELL</pre> 
         </a>
-        </div>
         </div>
 
                
